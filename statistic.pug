@@ -1,0 +1,203 @@
+extends templates/temp
+
+block content
+    h1 Cтатистика
+    center Здесь вы можете посмотреть таблицу с нашими спонсорами.
+    .sblock
+        .text
+            h2 Сортировка
+            form(action="new_question" method="ask")
+            p
+                <input  type="radio"  name="sort" value="1"> По имени <br>
+            p
+                <input  type="radio"  name="sort" value="2"> По дате <br>
+            p
+                <input  type="radio"  name="sort" value="2"> По сумме <br>
+            input(type="submit")
+        .text
+            h2 Рассчитать
+            form(action="new_question" method="ask")
+            <select name="math">
+                <option value="0"> Средняя сумма пожертвования </option>
+                <option value="1" selected> Общее количество пожертвований </option>
+            </select>
+            input(type="submit")
+            h2 Построить
+            form(action="new_question" method="ask")
+            <select name="math">
+                <option value="0">График количества пожертвований за всё время</option>
+                <option value="1" selected>Диаграмму пожертвований</option>
+            </select>
+            input(type="submit")
+    <table align=center height=50 border=5>
+    <tr align=center>
+    <th>ФИ</th>
+    <th>Дата пожертвования</th>
+    <th>Сумма (в рублях)</th>
+    </tr>
+    <tr align=center>
+    <td>Иванов Иван</td>
+    <td>12.10.2022</td>
+    <td>500000</td>
+    </tr>
+    <tr align=center>
+    <td>Ахматова Мария</td>
+    <td>30.10.2022</td>
+    <td>100000</td>
+    </tr>
+    <tr align=center>
+    <td>Цой Дмитрий</td>
+    <td>11.11.2020</td>
+    <td>100000</td>
+    </tr>
+    <tr align=center>
+    <td>Цой Аркадий</td>
+    <td>10.11.2020</td>
+    <td>100000</td>
+    </tr>
+    <tr align=center>
+    <td>Цветаева Ирина</td>
+    <td>02.11.2021</td>
+    <td>100000</td>
+    </tr>
+    <tr align=center>
+    <td>Иванова Анна</td>
+    <td>01.11.2020</td>
+    <td>90000</td>
+    </tr>
+    <tr align=center>
+    <td>Ариева Милана</td>
+    <td>03.02.2019</td>
+    <td>80000</td>
+    </tr>
+    <tr align=center>
+    <td>Мариева Милана</td>
+    <td>04.12.2019</td>
+    <td>70000</td>
+    </tr>
+    <tr align=center>
+    <td>Макарова Анастасия</td>
+    <td>03.02.2018</td>
+    <td>77300</td>
+    </tr>
+    <tr align=center>
+    <td>Иванов Иван</td>
+    <td>12.10.2020</td>
+    <td>50000</td>
+    </tr>
+    <tr align=center>
+    <td>Ахматова Мария</td>
+    <td>30.10.2021</td>
+    <td>40000</td>
+    </tr>
+    <tr align=center>
+    <td>Цой Дмитрий</td>
+    <td>11.11.2020</td>
+    <td>40000</td>
+    </tr>
+    <tr align=center>
+    <td>Цой Аркадий</td>
+    <td>10.11.2021</td>
+    <td>100000</td>
+    </tr>
+    <tr align=center>
+    <td>Цветаева Елизавета</td>
+    <td>02.11.2020</td>
+    <td>90000</td>
+    </tr>
+    <tr align=center>
+    <td>Аркадьев Аркадий</td>
+    <td>11.05.2018</td>
+    <td>1000</td>
+    </tr>
+    <tr align=center>
+    <td>Аркадьев Аркадий</td>
+    <td>11.06.2018</td>
+    <td>1000</td>
+    </tr>
+    <tr align=center>
+    <td>Аркадьев Аркадий</td>
+    <td>11.07.2018</td>
+    <td>1000</td>
+    </tr>
+    <tr align=center>
+    <td>Аркадьев Аркадий</td>
+    <td>11.08.2018</td>
+    <td>1000</td>
+    </tr>
+    <tr align=center>
+    <td>Аркадьев Анатолий</td>
+    <td>08.08.2019</td>
+    <td>10000</td>
+    </tr>
+    <tr align=center>
+    <td>Мельникова Екатерина</td>
+    <td>28.09.2019</td>
+    <td>10000</td>
+    </tr>
+    <tr align=center>
+    <td>Пушкин Александр</td>
+    <td>10.10.1830</td>
+    <td>68400</td>
+    </tr>
+    <tr align=center>
+    <td>Пушкин Михаил</td>
+    <td>07.06.2017</td>
+    <td>12000</td>
+    </tr>
+    <tr align=center>
+    <td>Малахов Андрей</td>
+    <td>01.09.2018</td>
+    <td>90000</td>
+    </tr>
+    <tr align=center>
+    <td>Шишков Михаил</td>
+    <td>11.06.2017</td>
+    <td>12000</td>
+    </tr>
+    <tr align=center>
+    <td>Шашков Михаил</td>
+    <td>02.08.2017</td>
+    <td>14000</td>
+    </tr>
+    <tr align=center>
+    <td>Круглова Валерия</td>
+    <td>22.01.2017</td>
+    <td>12000</td>
+    </tr>
+    <tr align=center>
+    <td>Круглов Иван</td>
+    <td>07.06.2017</td>
+    <td>12000</td>
+    </tr>
+    <tr align=center>
+    <td>Круглова Екатерина</td>
+    <td>07.01.2017</td>
+    <td>1900</td>
+    </tr>
+    <tr align=center>
+    <td>Каракатова Аннв</td>
+    <td>07.02.2016</td>
+    <td>12000</td>
+    </tr>
+    <tr align=center>
+    <td>Данова Мария</td>
+    <td>01.02.2018</td>
+    <td>19000</td>
+    </tr>
+    <tr align=center>
+    <td>Минина Мария</td>
+    <td>07.01.2018</td>
+    <td>20000</td>
+    </tr>
+    <tr align=center>
+    <td>Круглова Мария</td>
+    <td>08.01.2018</td>
+    <td>33000</td>
+    </tr>
+    <tr align=center>
+    <td>Санаева Елизавета</td>
+    <td>06.05.2019</td>
+    <td>11000</td>
+    </tr>
+    </table>

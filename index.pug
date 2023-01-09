@@ -1,0 +1,40 @@
+extends templates/temp
+
+block content
+    .container
+        img(src="img/main_cat.jpg" alt="background-image")
+        div
+           p ЗАДАТЬ ВОПРОС <br><br> Если ваш вопрос в нашей компетенции и мы располагаем достаточным ресурсом для его решения, мы обязательно ответим вам в ближайшее время
+           form(action="new_question" method="ask")
+           p
+               input(type="text" name="FIO" placeholder="Ф.И.О.")
+           p
+               input(type="text" name="phone" placeholder="Телефон")
+           p
+               textarea(name="question" placeholder="Вопрос")
+           input(type="submit")
+
+    .block
+       img(src="img/dog.jpeg")
+       .text
+            h2 О нас
+            p Наш общественный фонд "Солнышко" реализует различные программы помощи бездомным животным. У нас есть два собственных приюта, в которых проживает около 500 000 животных. Приют "Солнышко" открыт для посещения всех желающих ежедневно с 12:00 до 19:00 по адресу Калинина 333к. Мы будем рады Вас видеть!
+            p <br><br> По любым вопросам или при желании помочь нашему фонду вы всегда можете связаться с нами.
+            <details>
+            <summary>Наши контакты</summary>
+                    <ul type=none>
+                        <li>Тел.: +89997778811</li>
+                        <li>Тел.: 2280011</li>
+                        <li>E-mail: sunhouse@this.mail.com</li>
+                    </ul>
+            </details>
+
+    .block
+        .text
+            h2 Наши помощники
+            p Фотографии наших волонтеров и прекрасных любимцев!
+        img(src="img/im1.jpg")
+    .block
+        img(src="img/im2.jpg")
+        img(src="img/im3.jpg")
+
